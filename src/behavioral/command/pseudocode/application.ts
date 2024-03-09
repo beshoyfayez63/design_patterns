@@ -3,6 +3,9 @@ import { Command, CopyCommand, CutCommand, PasteCommand } from "./command";
 import { CommandHistory } from "./command-history";
 import { Editor } from "./editor";
 
+// The application class sets up object relations. It acts as a
+// sender: when something needs to be done, it creates a command
+// object and executes it.
 export class Application {
   clipboard = '';
   editors: Editor[] = [];

@@ -1,4 +1,6 @@
-
+/**
+ * There’s another implementation which is useful when you don’t want to leave even the slightest chance of other classes accessing the state of the originator through the memento.
+ */
 /**
  * Step 1:
  * This implementation allows having multiple types of originators and mementos. Each originator works with a corresponding memento class. Neither originators nor mementos expose their state to anyone.
@@ -48,3 +50,5 @@ class Caretaker {
     if(m) m.restore();
   }
 }
+
+export {}
